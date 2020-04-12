@@ -105,25 +105,25 @@ let nums = [3, 1, 2, 4, 5];
 #### Answer: 工程上可行的方案，应该是执行效率较高，代码易读，代码可以封装成通用方法。
 
 A. 交集：先对nums1去重，在遍历nums1元素，将nums2也同时包含的元素作为filter条件。
-```
+```javascript
 let intersect = [...new Set(nums1)].filter(item => nums2.includes(item));
 let combined = new Set([...nums1, ...nums2]);
 let difference = new Set(nums1.filter(v => !nums2.includes(v)));
 ```
 B. 使用JS内置的Array.from()方法
-```
+```javascript
 let names = Array.from(employees, ({name}) => name);
 ```
 C. 将Boolean作为filter条件
-```
+```javascript
 let cleaned = results.filter(Boolean)
 ```
 D. 使用Array.reduce()方法
-```
+```javascript
 let sum = nums.reduce((x, y) => x + y, 0);
 ```
 E. 使用Array.sort()方法，注意自定义排序函数的使用
-```
+```javascript
 let sorted = nums.sort((a, b) => a-b); // 如果需要倒序，则排序函数是 b-a
 ```
 </p>
