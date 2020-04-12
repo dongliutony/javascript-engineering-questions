@@ -56,7 +56,7 @@ B方案是可行的，但是在大多数场景下不推荐。缺点是实现复�
 场景描述：为下面的各种应用场景设计工程上可行的处理方式。
 
 A. 找出2个数组的交集，并集，差集
-```
+```javascript
 // given:
 let nums1 = [0, 2, 4, 6, 8, 8];
 let nums2 = [1, 2, 3, 4, 5, 6];
@@ -64,7 +64,7 @@ let nums2 = [1, 2, 3, 4, 5, 6];
 [2, 4, 6], [0,2,4,6,8,1,3,5], [0,8]
 ```
 B. 从array of obj映射出 array of value:
-```
+```javascript
 // given
 let employees = [
     { name: 'Tom', age: 42, gender: 'M' },
@@ -78,21 +78,21 @@ let employees = [
 ["Tom", "David", "Matt", "Mary", "Monica", "Shally"]
 ```
 C. 清洗数组中的false值（包括false, 0， ""，null, NaN, undefined）
-```
+```javascript
 // given
 let results = [0, 'negative', '', NaN, 9, true, undefined, 'high', false];
 // asked for
 ["negative", 9, true, "high"]
 ```
 D. 数组求和
-```
+```javascript
 // given
 let nums = [1, 2, 3, 4, 5];
 // asked for
 15
 ```
 E. 数组排序
-```
+```javascript
 // given
 let nums = [3, 1, 2, 4, 5];
 // asked for
